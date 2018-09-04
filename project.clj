@@ -34,7 +34,7 @@
   :cljsbuild
   {:builds
    [{:id "dev"
-     :source-paths ["src/cljs"]
+     :source-paths ["src/cljs" "test/cljs"]
      :figwheel {:on-jsload "sample-reagent.core/on-js-reload"
                 :open-urls ["http://localhost:3449/index.html"]}
      :compiler {:main sample-reagent.core
